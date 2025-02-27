@@ -1,0 +1,39 @@
+.voterList {
+    width: 70%;
+    margin: 2rem auto;
+    background-color: #231e39;
+    padding: 1.5rem;
+    border-radius: 10px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.4);
+    color: #b3b8cd;
+    position: relative; /* Ensure the button is positioned relative to this container */
+    min-height: 400px; /* Ensure the container has some height */
+}
+
+/* Style for the Print Button */
+.printButton {
+    position: absolute;
+    bottom: 20px; /* Adjust to set distance from the bottom */
+    left: 50%;
+    transform: translateX(-50%); /* Center the button horizontally */
+    padding: 10px 20px;
+    background-color: #4caf50; /* Green background */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    transition: background-color 0.3s ease;
+}
+
+.printButton:hover {
+    background-color: #45a049; /* Darker green on hover */
+}
+
+/* Media Queries */
+@media screen and (max-width: 720px) {
+    .voterList {
+        width: 90%;
+    }
+}
